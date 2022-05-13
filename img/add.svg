@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg fill="none" viewBox="0 0 19 19" xmlns="http://www.w3.org/2000/svg">
+<circle cx="9.5" cy="9.5" r="8.5" stroke="#BEBEBE"/>
+<line x1="9.5" x2="9.5" y1="5" y2="14" stroke="#BEBEBE"/>
+<line x1="14" x2="5" y1="9.5" y2="9.5" stroke="#BEBEBE"/>
+</svg>

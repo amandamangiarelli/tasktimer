@@ -1,0 +1,497 @@
+html, body{
+    height: 100vh;
+    margin: 0px;
+    background-image: linear-gradient(#FFFFFF, #EBEBEB, #C2C1C1);
+	background-size: cover;
+    font-family: PT Serif;
+    font-style: normal;
+    font-weight: normal;
+	background-attachment: fixed;
+}
+
+/* Home Page */
+
+.current-time{
+    height: 10vh;
+    background: #D8E1F1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+}
+
+.current-time span{
+    color: #253147;
+}
+
+.current-time span:first-child{    
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.current-time span:last-child{
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    margin-top: 3px;
+}
+
+
+.header{
+    height: 10vh;
+    background: #9AB1DD;
+    position: relative;
+}
+
+.header > div {
+    position: relative;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-btn{
+    position: absolute;
+    cursor: pointer;
+    top: 35%;
+    right: 30px;
+}
+
+.dropzone{
+    height: 15vh;
+    border: 2px solid #BEBEBE;
+    border-style: dashed;
+    margin: 15px;
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    align-items: center;
+    cursor: pointer;
+}
+
+.dropzone span{
+    font-size: 14px;
+    line-height: 19px;
+    color: #BEBEBE;
+}
+
+#addLink {
+	text-decoration: none;
+}
+
+.recent-divider{
+    margin: 0px 15px;
+    font-family: Oswald;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 21px;
+    color: #BEBEBE;
+    border-bottom: 1px solid #BEBEBE;
+    transform: rotate(0.18deg);
+}
+
+.nounderline {
+	text-decoration: none;
+}
+
+.tasks{
+    padding: 0px 15px;
+	text-decoration: none;
+}
+
+.task{
+    padding: 10px;
+    background: #D8E1F1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+	text-decoration: none;
+	flex-grow: 1;
+}
+
+.task span{
+    font-family: Oswald;
+    font-style: normal;
+    color: #253147;
+	text-decoration: none;
+}
+
+.task div:first-child{
+    display: flex;
+    justify-content: space-between;
+    flex-flow: column;
+    width: 70%;
+}
+
+.task div:last-child{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 30%;
+}
+
+.task .title{    
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 1.8;
+	text-decoration: none;
+}
+
+.task .description{
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 1.8;
+	text-decoration: none;
+}
+
+.task .time{
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 1.8;
+    margin-right: 10px;
+	text-decoration: none;
+}
+
+/* Nav Page */
+.menu {
+    height: 100%;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.menu a{
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 300%;
+    color: #253147;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.cross-btn{
+    position: absolute;
+    top: 30px;
+    right: 35px;
+    cursor: pointer;
+}
+
+/* New Task Page */
+.task-form {
+    height: 100%;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    padding: 0px 40px;
+    position: relative;    
+}
+
+.task-form .subject{
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 300%;
+    color: #253147;
+    text-align: center;
+}
+
+.task-form label{
+    font-family: Oswald;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    color: #253147;
+}
+
+.task-form .title {
+    display: flex;
+    flex-flow: column;
+    margin-bottom: 30px;
+    position: relative;    
+}
+
+.task-form .title .add {
+    position: absolute;
+    right: -33px;
+    top: 33px;
+    font-size: 10px;
+    line-height: 13px;
+    display: flex;
+    align-items: center;
+    color: #253147;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+}
+
+.task-form .title select{
+    height: 28px;
+    background: transparent;
+    border: 1px solid #253147;
+    box-sizing: border-box;
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.task-form .title textarea{
+    background: transparent;
+    border: 1px solid #253147;
+    box-sizing: border-box;
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.task-form .description {
+    display: flex;
+    flex-flow: column;
+    margin-bottom: 30px;
+}
+
+.task-form .description textarea{
+    height: 70px;
+    background: transparent;
+    border: 1px solid #253147;
+    box-sizing: border-box;
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.task-form .category{
+    display: flex;
+    flex-flow: column;
+}
+
+.task-form .category .items{
+	display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+	text-align: center;
+}
+
+.task-form .category .items > div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3px;
+	flex: 1 1 30%; /*grow | shrink | basis */
+    height: 25px;
+	text-align: center;
+}
+
+
+.task-form .category .item{
+    width: 30%;
+    height: 21px;
+    background: #BEBEBE;
+    font-size: 12px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #253147;
+    cursor: pointer;
+	margin: 0px 3px 0px 0px;
+}
+
+.task-form .category .item .plus{
+    width: 13px;
+    height: 13px;
+    border: 1px solid #253147;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #253147;
+}
+
+.task-form .category .clicked{
+    background: #253147;
+    color: #BEBEBE;
+}
+
+.task-form button{
+    width: 94px;
+    height: 44px;
+    background: #253147;
+    color: white;
+    align-self: center;
+    margin-top: 40px;
+    border: unset;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 24px;
+    color: #D8E1F1;
+}
+
+#nav-links{
+    overflow: hidden;
+    transition: all 0.3s ease 0s;
+    margin: 0px;
+    background: #9AB1DD;
+    padding: 0px;
+    box-shadow: 0px 8px 10px #aaaaaa;
+    height: 0px;
+}
+
+#nav-links li {
+    list-style: none;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+
+#nav-links li > a {
+    text-decoration: none;
+    color: #253147;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 27px;
+    padding: 10px 0px;
+}
+
+/* Timer */
+.timerwrapper {
+    height: 100%;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    padding: 0px 40px;
+    position: relative;    
+}
+
+.timerwrapper h1 {
+	font-weight: bold;
+    font-size: 36px;
+	font-family: 'Oswald', sans-serif;
+    line-height: 200%;
+    color: #253147;
+    text-align: center;
+	margin: 20px 0px 0px 0px;
+}
+.timerwrapper h2 {
+	font-weight: normal;
+    font-size: 22px;
+	font-family: 'Oswald', sans-serif;
+    color: #253147;
+    text-align: center;
+	margin: 0px 0px 10px 0px;
+}
+
+/** Timer **/
+
+.stopwatch {
+  display: grid;
+  justify-items: center;
+  grid-row-gap: 23px;
+  width: 100%;
+  padding-top: 25px;
+}
+
+.circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 270px;
+  width: 270px;
+
+  border: 2px solid;
+  border-radius: 50%;
+  color: #253147;
+}
+
+.time {
+  font-family: "PT Serif", serif;
+  font-weight: 300;
+  font-size: 62px;
+  color: #253147;
+}
+
+.gold {
+  font-weight: 900;
+
+  color: #f2c94c;
+  text-shadow: 0 0 0px #fff, 0 0 50px #f2c94c;
+}
+
+.controls {
+  display: flex;
+  justify-content: space-between;
+
+  width: 187px;
+}
+
+button {
+  cursor: pointer;
+  background: transparent;
+  padding: 0;
+  border: none;
+  margin: 0;
+  outline: none;
+}
+
+#playButton {
+  display: block;
+}
+
+#pauseButton {
+  display: none;
+}
+
+#editButton, #saveTime {
+    width: 94px;
+    height: 44px;
+    background: #253147;
+    color: white;
+    align-self: center;
+    margin-top: 40px;
+	margin-right: 15px;
+    border: unset;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 24px;
+    color: #D8E1F1;
+}
+
+#deleteButton {
+    width: 94px;
+    height: 44px;
+    background: #253147;
+    color: white;
+    align-self: center;
+    margin-top: 40px;
+    border: unset;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 24px;
+    color: #D8E1F1;
+}
+
+/** misc **/
+
+#confirmMsg {
+    height: 7vh;
+    margin: 15px;
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    align-items: center;
+	font-weight: bold;
+    color: #253147;
+	background-color: #9AB1DD;
+	box-shadow: 3px 3px 5px #888888;
+}
+
+#hiddenDiv {
+	 display: none;
+}
+
+#backButton {
+     position:fixed;
+     bottom:0;
+     left:0;
+	 margin: 30px;
+}
